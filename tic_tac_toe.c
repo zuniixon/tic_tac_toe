@@ -4,9 +4,9 @@
 /*
 	Ébauche tableau :
 
-	int tableau[3][3] = {{0, 0, 0},
-						 {0, 0, 0},
-						 {0, 0, 0}}
+	int tableau[3][3]	= 	{{0, 0, 0},
+						 	{0, 0, 0},
+						 	{0, 0, 0}}
 */
 int tab_init();
 void dessiner_tab(int tab, int longueur);
@@ -17,9 +17,9 @@ int main(void) {
 }
 
 int tab_init() {
-	int tab[3][3] = {{0, 0, 0},
-					 {0, 0, 0},
-					 {0, 0, 0}};
+	int tab[3][3] 	= 	{{0, 0, 0},
+					 	{0, 0, 0},
+					 	{0, 0, 0}};
 	return tab
 }
 
