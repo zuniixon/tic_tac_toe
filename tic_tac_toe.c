@@ -1,30 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
-	Ébauche tableau :
-
-	int tableau[3][3]	= 	{{0, 0, 0},
-						 	{0, 0, 0},
-						 	{0, 0, 0}}
-*/
-int tab_init();
-void dessiner_tab(int tab, int longueur);
+void dessiner_tab(int tab);
 
 int main(void) {
-
+	int tab[3][3] = {{0, 0, 0},{0, 0, 0},{0, 0, 0}};
+	dessiner_tab(tab);
 	return EXIT_SUCCESS;
 }
 
-int tab_init() {
-	// Initialise le plateau vide et ensuite le dessine
-	int tab[3][3] 	= 	{{0, 0, 0},
-					 	{0, 0, 0},
-					 	{0, 0, 0}};
- 	dessiner_tab(tab);
-	return tab;
-}
-
-void dessiner_tab(int tab, int longueur) {
+void dessiner_tab(int tab) {
 	// Dessine le plateau passé en paramètre
+	for (int i = 0; i < 3; ++i)
+	{
+		printf("\t %d %d %d\n", tab[i][0], tab[i][1], tab[i][2]);
+
+	}
 }

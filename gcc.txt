@@ -1,0 +1,16 @@
+tic_tac_toe.c:8:15: error: incompatible pointer to integer conversion passing 'int [3][3]' to parameter of type 'int' [-Werror,-Wint-conversion]
+        dessiner_tab(tab);
+                     ^~~
+tic_tac_toe.c:4:23: note: passing argument to parameter 'tab' here
+void dessiner_tab(int tab);
+                      ^
+tic_tac_toe.c:16:30: error: subscripted value is not an array, pointer, or vector
+                printf("\t %d %d %d\n", tab[i][0], tab[i][1], tab[i][2]);
+                                        ~~~^~
+tic_tac_toe.c:16:41: error: subscripted value is not an array, pointer, or vector
+                printf("\t %d %d %d\n", tab[i][0], tab[i][1], tab[i][2]);
+                                                   ~~~^~
+tic_tac_toe.c:16:52: error: subscripted value is not an array, pointer, or vector
+                printf("\t %d %d %d\n", tab[i][0], tab[i][1], tab[i][2]);
+                                                              ~~~^~
+4 errors generated.
