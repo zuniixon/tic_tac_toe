@@ -18,8 +18,8 @@ int main(void) {
 
 int tab_init() {
 	int tab[3][3] = {{0, 0, 0},
-						 {0, 0, 0},
-						 {0, 0, 0}};
+					 {0, 0, 0},
+					 {0, 0, 0}};
 	return tab
 }
 
