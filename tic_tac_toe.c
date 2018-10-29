@@ -17,12 +17,14 @@ int main(void) {
 }
 
 int tab_init() {
+	// Initialise le plateau vide et ensuite le dessine
 	int tab[3][3] 	= 	{{0, 0, 0},
 					 	{0, 0, 0},
 					 	{0, 0, 0}};
-	return tab
+ 	dessiner_tab(tab);
+	return tab;
 }
 
 void dessiner_tab(int tab, int longueur) {
-
+	// Dessine le plateau passé en paramètre
 }
